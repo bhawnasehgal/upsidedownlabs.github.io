@@ -755,7 +755,10 @@ amazing Human-Computer Interface (HCI) projects.</p>
 <h3>Step 1: Connect Arduino UNO R3<a class="headerlink" href="#step-1-connect-arduino-uno-r3" title="Link to this heading">#</a></h3>
 <img alt="../../../_images/arduino-candy-connection.png" src="../../../_images/arduino-candy-connection.png" />
 <p>Connect <cite>VCC</cite> to either <cite>5V</cite> or <cite>3.3V</cite>, <cite>GND</cite> to <cite>GND</cite>, and <cite>OUT</cite> to <cite>Analog pin A0</cite> of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the <cite>INPUT PIN</cite> macro in the example arduino sketch accordingly.</p>
-<p><strong>Note:</strong> For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Take precautions while connecting to power, if power pins (GND &amp; VCC) are to be swapped, your sensor will be fried and it’ll become unusable (DIE).</p>
@@ -799,7 +802,7 @@ amazing Human-Computer Interface (HCI) projects.</p>
 <p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
 </div>
 <p><strong>Uploading the code:</strong></p>
-<p>Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
 <p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
 <p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
 <p>Go to <strong>“tools”</strong> from the menu bar, select <strong>“board”</strong> option then select Arduino UNO. In the same menu,
