@@ -53,7 +53,7 @@
     <link rel="prev" title="Muscle BioAmp Blip" href="../muscle-bioamp-blip/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 19, 2024"/>
+    <meta name="docbuild:last-update" content="Apr 23, 2024"/>
   </head>
   
   
@@ -877,29 +877,28 @@ muscles (EMG) using softwares like audacity or Backyard Brain’s spike recorder
 <p>The image above shows the possibilities of using BioAmp v1.5. Seems complicated? Don’t worry, we’ll explain each and every step in detail. So follow along to create your own setup.</p>
 <section id="step-1-connecting-the-cables">
 <h3>Step 1: Connecting the cables<a class="headerlink" href="#step-1-connecting-the-cables" title="Link to this heading">#</a></h3>
-<img alt="../../../_images/board-with-cables.png" src="../../../_images/board-with-cables.png" />
 <p>Connect the BioAmp cable, 9V snap cable and BioAmp AUX cable to BioAmp v1.5 by inserting the cable ends in the respective JST PH connectors as shown above.</p>
+<img alt="../../../_images/board-with-cables.png" src="../../../_images/board-with-cables.png" />
 </section>
 <section id="step-2-skin-preparation">
 <h3>Step 2: Skin Preparation<a class="headerlink" href="#step-2-skin-preparation" title="Link to this heading">#</a></h3>
-<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.</p>
+<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.</p>
 <p>For more information, please check out detailed step by step <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a>.</p>
 </section>
 <section id="step-3-electrode-placements">
 <h3>Step 3: Electrode placements<a class="headerlink" href="#step-3-electrode-placements" title="Link to this heading">#</a></h3>
 <p>We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.</p>
-<ul class="simple">
-<li><p><strong>Using gel electrodes:</strong></p></li>
-</ul>
+<section id="using-gel-electrodes">
+<h4>Using gel Electrodes<a class="headerlink" href="#using-gel-electrodes" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from the electrodes.</p></li>
 <li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
 </ol>
 <img alt="../../../_images/bioamp-v1-5-emg.png" src="../../../_images/bioamp-v1-5-emg.png" />
-<ul class="simple">
-<li><p><strong>Using Muscle BioAmp Band:</strong></p></li>
-</ul>
+</section>
+<section id="using-muscle-bioamp-band">
+<h4>Using Muscle BioAmp Band<a class="headerlink" href="#using-muscle-bioamp-band" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
 <li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p></li>
@@ -912,6 +911,7 @@ muscles (EMG) using softwares like audacity or Backyard Brain’s spike recorder
 <p class="admonition-title">Tip</p>
 <p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
 </div>
+</section>
 </section>
 <section id="step-4-connecting-9v-battery">
 <h3>Step 4: Connecting 9V battery<a class="headerlink" href="#step-4-connecting-9v-battery" title="Link to this heading">#</a></h3>
@@ -959,6 +959,9 @@ muscles (EMG) using softwares like audacity or Backyard Brain’s spike recorder
 <li><p>Download the <a class="reference external" href="https://play.google.com/store/apps/details?id=com.backyardbrains&amp;pli=1">Spike Recorder App</a> from playstore.</p></li>
 <li><p>Open the app, click the setting icon on the top right corner and set the recording type to EMG.</p></li>
 <li><p>Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../_images/spike-recorder-mobile.jpg"><img alt="../../../_images/spike-recorder-mobile.jpg" class="align-center" src="../../../_images/spike-recorder-mobile.jpg" style="width: 80%;" /></a>
+<ol class="arabic simple" start="4">
 <li><p>Again click on the setting icon to close it and you are ready.</p></li>
 <li><p>Flex your muscles to be able to visualize the muscle signals (EMG).</p></li>
 <li><p>You can record the EMG data as a .wav file by pressing the record button on the top right corner of the app and then convert it in any other format as per your project requirements.</p></li>
@@ -976,6 +979,9 @@ muscles (EMG) using softwares like audacity or Backyard Brain’s spike recorder
 <li><p>Install the spike recorder software that you downloaded earlier.</p></li>
 <li><p>Open the software, click the setting icon on the top right corner and set the low band pass filter to 72Hz and high band pass filter to 720Hz.</p></li>
 <li><p>Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.</p></li>
+</ol>
+<img alt="../../../_images/spike-recorder-laptop.png" src="../../../_images/spike-recorder-laptop.png" />
+<ol class="arabic simple" start="4">
 <li><p>Again click on the setting icon to close it and you are ready.</p></li>
 <li><p>Flex your muscles to be able to visualize the muscle signals (EMG)</p></li>
 <li><p>You can record the EMG data as a .wav file by pressing the record button on the top right corner of the app and then convert it in any other format as per your project requirements.</p></li>
@@ -1051,7 +1057,11 @@ muscles (EMG) using softwares like audacity or Backyard Brain’s spike recorder
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-connecting-the-cables">Step 1: Connecting the cables</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-skin-preparation">Step 2: Skin Preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-electrode-placements">Step 3: Electrode placements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-electrode-placements">Step 3: Electrode placements</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-gel-electrodes">Using gel Electrodes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-muscle-bioamp-band">Using Muscle BioAmp Band</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-connecting-9v-battery">Step 4: Connecting 9V battery</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-listen-to-your-muscle-signals">Step 5: Listen to Your Muscle Signals</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#listening-emg-on-speakers">Listening EMG on speakers</a></li>
@@ -1161,7 +1171,7 @@ muscles (EMG) using softwares like audacity or Backyard Brain’s spike recorder
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 19, 2024.
+  Last updated on Apr 23, 2024.
   <br/>
 </p></div>
       
