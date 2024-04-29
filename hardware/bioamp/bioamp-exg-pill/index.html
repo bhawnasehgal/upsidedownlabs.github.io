@@ -710,11 +710,13 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <figure class="align-center">
 <img alt="../../../_images/Back_Specifications.jpg" src="../../../_images/Back_Specifications.jpg" />
 </figure>
-<p><strong>BioAmp EXG Pill is fully configurable as you can:</strong></p>
+<section id="bioamp-exg-pill-is-fully-configurable">
+<h3>BioAmp EXG Pill is fully configurable<a class="headerlink" href="#bioamp-exg-pill-is-fully-configurable" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Increase the gain of the instrumentation amplifier by using a 0603 resistor at R6. Decrease gain and configure the bandpass filter by using 0603 parts at R12 and C5. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.</p></li>
 <li><p>The normal method of operation for best-quality signal amplification is to use 3 electrodes by default but you can bridge the pads (below electrodes) to make it configurable for 2 electrodes. The 2-electrode mode is specifically included for projects like heart (ECG) patches for HRV. It’s only supposed to be used with a battery-operated setup and is quite prone to high interference noise due to a lack of proper reference on the body (This option is not recommended for most operations)</p></li>
 </ol>
+</section>
 </section>
 <section id="software-requirements">
 <h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
@@ -1179,7 +1181,10 @@ Brain Computer Interface (BCI) projects and share them with us at <a class="refe
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-it-different">What makes it different?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-layout">Board layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-layout">Board layout</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bioamp-exg-pill-is-fully-configurable">BioAmp EXG Pill is fully configurable</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-requirements">Software requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-hardware">Using the Hardware</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-solder-connectors">Step 1: Solder Connectors</a></li>
