@@ -53,7 +53,7 @@
     <link rel="prev" title="DIY Neuroscience Kit Basic" href="../basic/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jun 12, 2024"/>
+    <meta name="docbuild:last-update" content="Jun 22, 2024"/>
   </head>
   
   
@@ -696,12 +696,15 @@ applications, and gain valuable insights.</p>
 </iframe></div></section>
 <section id="software-requirements">
 <h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
+<p>Download the following according to the operating system you are using (Windows, OSX, Linux):</p>
 <ul class="simple">
-<li><p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches in your development board and visualise the data on your laptop.</p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/download">Visual Studio Code</a></p></li>
+<li><p><a class="reference external" href="https://www.python.org/downloads/">Python</a></p></li>
+<li><p><a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a></p></li>
 </ul>
 <img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
 <ul class="simple">
-<li><p>Download Backyard Brains’ <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">Spike Recorder</a> according to the operating system you are using (Windows, OSX, Linux).</p></li>
+<li><p>Backyard Brains’ <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">Spike Recorder</a></p></li>
 </ul>
 <img alt="../../../_images/byb.png" src="../../../_images/byb.png" />
 </section>
@@ -755,11 +758,29 @@ signals to make amazing projects in the domain of Human-Computer Interface (HCI)
 <section id="b-connecting-sensors-together">
 <h4>b. Connecting sensors together<a class="headerlink" href="#b-connecting-sensors-together" title="Link to this heading">#</a></h4>
 <p>Connect the BioAmp EXG Pill to the A2 port of Muscle BioAmp Shield via 3-pin STEMMA cable which has JST PH 2.0mm connector on one end and 3 female jumpers on the other end.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Muscle BioAmp Shield</p></th>
+<th class="head"><p>BioAmp EXG Pill</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>VCC</p></td>
+<td><p>5V</p></td>
+</tr>
+<tr class="row-even"><td><p>A2</p></td>
+<td><p>OUT</p></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="c-connecting-electrode-cable">
-<h4>c. Connecting electrode cable<a class="headerlink" href="#c-connecting-electrode-cable" title="Link to this heading">#</a></h4>
-<p>Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.</p>
-<p>Now connect another BioAmp cable to Muscle BioAmp Shield by inserting the cable end in the JST PH connector as shown in the graphic below.</p>
+<section id="c-connecting-electrode-cables">
+<h4>c. Connecting electrode cables<a class="headerlink" href="#c-connecting-electrode-cables" title="Link to this heading">#</a></h4>
+<p>Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown below</p>
+<p>Now connect another BioAmp cable to Muscle BioAmp Shield by inserting the cable end in the JST PH connector as shown below:</p>
 </section>
 <section id="d-skin-preparation">
 <h4>d. Skin Preparation<a class="headerlink" href="#d-skin-preparation" title="Link to this heading">#</a></h4>
@@ -773,16 +794,20 @@ signals to make amazing projects in the domain of Human-Computer Interface (HCI)
 <section id="using-gel-electrodes">
 <h5>Using gel electrodes<a class="headerlink" href="#using-gel-electrodes" title="Link to this heading">#</a></h5>
 <ol class="arabic simple">
-<li><p>Connect the BioAmp cable to gel electrodes,</p></li>
-<li><p>Peel the plastic backing from electrodes</p></li>
-<li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
+<li><p>Snap the BioAmp Cable connected to BioAmp EXG Pill to gel electrodes.</p></li>
+<li><p>Peel the plastic backing from electrodes.</p></li>
+<li><p>Place the IN+ and IN- cables on the left arm near the ulnar nerve &amp; REF (reference) at the back of your left hand as shown below.</p></li>
+<li><p>Now snap the BioAmp Cable connected to Muscle BioAmp Shield to gel electrodes.</p></li>
+<li><p>Peel the plastic backing from electrodes.</p></li>
+<li><p>Place the IN+ and IN- cables on the right arm near the ulnar nerve &amp; REF (reference) at the back of your right hand as shown below.</p></li>
 </ol>
 </section>
 <section id="using-muscle-bioamp-band">
 <h5>Using Muscle BioAmp Band<a class="headerlink" href="#using-muscle-bioamp-band" title="Link to this heading">#</a></h5>
 <ol class="arabic">
-<li><p>Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
-<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p>
+<li><p>Snap the BioAmp Cable connected to BioAmp EXG Pill on Muscle BioAmp Band in a way such that IN+ and IN- are placed on the left arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
+<li><p>Snap the BioAmp Cable connected to Muscle BioAmp Shield on Muscle BioAmp Band in a way such that IN+ and IN- are placed on the right arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
+<li><p>Now put a small drop of electrode gel between the skin and metallic parts of BioAmp Cables to get the best results.</p>
 <p><strong>Tutorial on how to use the band:</strong></p>
 </li>
 </ol>
@@ -794,7 +819,49 @@ signals to make amazing projects in the domain of Human-Computer Interface (HCI)
 </div>
 </section>
 </section>
+<section id="f-uploading-the-code">
+<h4>f. Uploading the code<a class="headerlink" href="#f-uploading-the-code" title="Link to this heading">#</a></h4>
+<p>Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
+select the COM port on which your Arduino Uno is connected. To find out the right COM port,
+disconnect your Arduino UNO board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
 </section>
+<section id="g-testing-the-connections">
+<h4>g. Testing the connections<a class="headerlink" href="#g-testing-the-connections" title="Link to this heading">#</a></h4>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, click on <code class="docutils literal notranslate"><span class="pre">serial</span> <span class="pre">monitor</span></code> to open it or click on the icon on the top right corner. Try flexing both of your arms one-by-one. The output values should be 0 at this point.</p>
+<p>Press the SW1 button on Muscle BioAmp Shield to start getting the output values 1 &amp; 2 when you flex your right and left arm respectively.</p>
+</section>
+<section id="h-running-python-script">
+<h4>h. Running python script<a class="headerlink" href="#h-running-python-script" title="Link to this heading">#</a></h4>
+<p>Open Visual Studio code, click on File&lt;Open folder to open the folder you downloaded from the GitHub.</p>
+<p>Open the terminal, and ensure that the path is configured to the location of the requirement.txt file.</p>
+<p>To install all the modules that are required to run the Python script, write the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> in the terminal.</p>
+<p>Open <code class="docutils literal notranslate"><span class="pre">EMG_Scroll.py</span></code> and change the COM Port in the code (line 14) as per the COM Port you selected in Arduino IDE. Save the file by clicking CTRL + S.</p>
+<p>Run the Python script <code class="docutils literal notranslate"><span class="pre">EMG_Scroll.py</span></code> by writing the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">EMG_Scroll.py</span></code> in the terminal.</p>
+</section>
+<section id="i-scrolling-using-emg-signals">
+<h4>i. Scrolling using EMG signals<a class="headerlink" href="#i-scrolling-using-emg-signals" title="Link to this heading">#</a></h4>
+<p>In the terminal, you will see Move Now prompt. When you flex your right arm, you’ll see UP in the terminal. Similarly, when you move your left arm, you’ll see DOWN in the terminal.</p>
+<p>Now, open youtube shorts on your laptop and start scrolling using your muscle signals.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>What’s happening in the background? Whenever an EMG signal is detected, it acts as a trigger to emulate UP or DOWN key on the keyboard.</p>
+</div>
+</section>
+<section id="j-conclusion">
+<h4>j. Conclusion<a class="headerlink" href="#j-conclusion" title="Link to this heading">#</a></h4>
+<p>This was just a demonstration to show you how both the sensors (BioAMp EXG Pill &amp; Muscle BioAmp Shield) can be used together to create a 2-channel EXG acquisition system.
+In this project, we used BioMap EXG Pill to record EMG signals, but it can also be used to record other biopotential signals as well like ECG, EOG, or EEG.</p>
+</section>
+</section>
+</section>
+<section id="some-project-ideas">
+<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -852,17 +919,23 @@ signals to make amazing projects in the domain of Human-Computer Interface (HCI)
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-using-the-sensors-together">Step 3: Using the sensors together</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-connecting-muscle-bioamp-shield-to-mcu-adc">a. Connecting Muscle BioAmp Shield to MCU/ADC</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-connecting-sensors-together">b. Connecting sensors together</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-connecting-electrode-cable">c. Connecting electrode cable</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-connecting-electrode-cables">c. Connecting electrode cables</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-skin-preparation">d. Skin Preparation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#e-electrodes-placement">e. Electrodes placement</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#using-gel-electrodes">Using gel electrodes</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#using-muscle-bioamp-band">Using Muscle BioAmp Band</a></li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#f-uploading-the-code">f. Uploading the code</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#g-testing-the-connections">g. Testing the connections</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-running-python-script">h. Running python script</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#i-scrolling-using-emg-signals">i. Scrolling using EMG signals</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#j-conclusion">j. Conclusion</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some project ideas</a></li>
 </ul>
   </nav></div>
 
@@ -929,7 +1002,7 @@ signals to make amazing projects in the domain of Human-Computer Interface (HCI)
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 12, 2024.
+  Last updated on Jun 22, 2024.
   <br/>
 </p></div>
       
