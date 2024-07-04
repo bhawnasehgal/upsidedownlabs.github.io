@@ -53,7 +53,7 @@
     <link rel="prev" title="DIY Kits" href="../../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jun 28, 2024"/>
+    <meta name="docbuild:last-update" content="Jul 04, 2024"/>
   </head>
   
   
@@ -184,19 +184,19 @@
                       </a>
                     </li>
                 
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
-                <li class="nav-item">
-                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
-                    DigiKey
-                  </a>
-                </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
                     Mouser
@@ -422,19 +422,19 @@ document.write(`
                       </a>
                     </li>
                 
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
                 </button>
                 <ul id="pst-nav-more-links-2" class="dropdown-menu">
                     
-                <li class="nav-item">
-                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
-                    DigiKey
-                  </a>
-                </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
                     Mouser
@@ -662,18 +662,24 @@ dry electrode-based BioAmp bands to skin preparation kit, this includes everythi
 <ul class="simple">
 <li><p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches in Maker UNO and visualise the data on your laptop.</p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
+</figure>
 <ul class="simple">
 <li><p>Download Backyard Brains’ <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">Spike Recorder</a> according to the operating system you are using (Windows, OSX, Linux).</p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/byb.png" src="../../../_images/byb.png" />
+</figure>
 </section>
 <section id="using-the-kit">
 <h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
 <p>This kit is made in a way so that even beginners can use it and get started with recording biopotential signals from their body to explore the field of neuroscience by making HCI/BCI projects.</p>
 <section id="step-1-optional-configure-for-emg-ecg">
 <h3>Step 1 (optional): Configure for EMG/ECG<a class="headerlink" href="#step-1-optional-configure-for-emg-ecg" title="Link to this heading">#</a></h3>
+<figure class="align-default">
 <img alt="../../../_images/configuration-emg-ecg.png" src="../../../_images/configuration-emg-ecg.png" />
+</figure>
 <p>BioAmp EXG Pill is by default configured for recording EEG or EOG, so if you are recording any of the two signals
 you can skip this step. But if you want to record good quality ECG or EMG, then it is recommended to configure it
 by making a solder joint as shown in the image above.</p>
@@ -684,7 +690,9 @@ by making a solder joint as shown in the image above.</p>
 </section>
 <section id="step-2-connect-maker-uno">
 <h3>Step 2: Connect Maker UNO<a class="headerlink" href="#step-2-connect-maker-uno" title="Link to this heading">#</a></h3>
+<figure class="align-default">
 <img alt="../../../_images/connection-with-maker-uno.png" src="../../../_images/connection-with-maker-uno.png" />
+</figure>
 <p>Connect <code class="docutils literal notranslate"><span class="pre">VCC</span></code> to <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code> to <code class="docutils literal notranslate"><span class="pre">GND</span></code>, and <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to <code class="docutils literal notranslate"><span class="pre">Analog</span> <span class="pre">pin</span> <span class="pre">A0</span></code> of your Maker UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -693,7 +701,9 @@ by making a solder joint as shown in the image above.</p>
 </section>
 <section id="step-3-connecting-electrode-cable">
 <h3>Step 3: Connecting electrode cable<a class="headerlink" href="#step-3-connecting-electrode-cable" title="Link to this heading">#</a></h3>
+<figure class="align-default">
 <img alt="../../../_images/bioamp-cable.png" src="../../../_images/bioamp-cable.png" />
+</figure>
 <p>Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown above.</p>
 </section>
 <section id="step-4-skin-preparation">
@@ -714,7 +724,9 @@ by making a solder joint as shown in the image above.</p>
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
 </ol>
+<figure class="align-default">
 <img alt="../../../_images/emg1.png" src="../../../_images/emg1.png" />
+</figure>
 <ul class="simple">
 <li><p><strong>Using Muscle BioAmp Band:</strong></p></li>
 </ul>
@@ -750,7 +762,9 @@ the EMG signals.</p>
 <section id="visualizing-the-emg-signals">
 <h4>Visualizing the EMG signals<a class="headerlink" href="#visualizing-the-emg-signals" title="Link to this heading">#</a></h4>
 <p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
+<figure class="align-default">
 <img alt="../../../_images/EMGEnvelop1.jpg" src="../../../_images/EMGEnvelop1.jpg" />
+</figure>
 </section>
 </section>
 <section id="step-6-measuring-ecg-electrocardiography">
@@ -766,7 +780,9 @@ the EMG signals.</p>
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown in the diagram.</p></li>
 </ol>
+<figure class="align-default">
 <img alt="../../../_images/ecg1.png" src="../../../_images/ecg1.png" />
+</figure>
 <ul class="simple">
 <li><p><strong>Using Heart BioAmp Band:</strong></p></li>
 </ul>
@@ -796,7 +812,9 @@ the EMG signals.</p>
 </section>
 <section id="visualizing-the-ecg-signals">
 <h4>Visualizing the ECG signals<a class="headerlink" href="#visualizing-the-ecg-signals" title="Link to this heading">#</a></h4>
+<figure class="align-default">
 <img alt="../../../_images/bioamp-Exg-Pill-ECG1.jpg" src="../../../_images/bioamp-Exg-Pill-ECG1.jpg" />
+</figure>
 </section>
 </section>
 <section id="step-7-measuring-eog-electrooculography">
@@ -807,7 +825,9 @@ the EMG signals.</p>
 <ul class="simple">
 <li><p><strong>Horizontal EOG recording:</strong></p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/eog-horizontal1.png" src="../../../_images/eog-horizontal1.png" />
+</figure>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -816,7 +836,9 @@ the EMG signals.</p>
 <ul class="simple">
 <li><p><strong>Vertical EOG recording:</strong></p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/eog-vertical1.png" src="../../../_images/eog-vertical1.png" />
+</figure>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -840,21 +862,27 @@ the EMG signals.</p>
 </section>
 <section id="visualizing-the-eog-signals">
 <h4>Visualizing the EOG signals<a class="headerlink" href="#visualizing-the-eog-signals" title="Link to this heading">#</a></h4>
+<figure class="align-default">
 <img alt="../../../_images/bioamp-exg-pill-eog1.jpg" src="../../../_images/bioamp-exg-pill-eog1.jpg" />
+</figure>
 </section>
 </section>
 <section id="step-8-measuring-eeg-electroencephalography">
 <h3>Step 8: Measuring EEG (ElectroEncephaloGraphy)<a class="headerlink" href="#step-8-measuring-eeg-electroencephalography" title="Link to this heading">#</a></h3>
 <p>Let’s understand the electrode placements before moving forward in this project. For recording EEG from
 different parts of the brain, you have to place the electrodes according to the <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">International 10-20 system for recording EEG</a>.</p>
+<figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/10-20-system.png"><img alt="../../../_images/10-20-system.png" src="../../../_images/10-20-system.png" style="width: 80%;" /></a>
+</figure>
 <section id="id6">
 <h4>Electrodes placement<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
 <p>We have 2 options to measure the EEG signals, either using the gel electrodes or using dry electrode based Brain BioAmp Band. You can try both of them one by one.</p>
 <ul class="simple">
 <li><p><strong>Using gel electrodes to record from prefrontal cortex part of brain:</strong></p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/eeg1.png" src="../../../_images/eeg1.png" />
+</figure>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -1131,7 +1159,7 @@ Brain Computer Interface (BCI) projects and share them with us at <a class="refe
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 28, 2024.
+  Last updated on Jul 04, 2024.
   <br/>
 </p></div>
       
