@@ -53,7 +53,7 @@
     <link rel="prev" title="Muscle BioAmp Shield" href="../muscle-bioamp-shield/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jul 04, 2024"/>
+    <meta name="docbuild:last-update" content="Jul 12, 2024"/>
   </head>
   
   
@@ -649,7 +649,7 @@ document.write(`
 muscle like a patch. It comes with reverse polarity projection, power indicator, onboard snap connectors, and Upside Down Labs’
 powerful BioAmp sensing technology for precise muscle signal recording. This enables you to easily integrate this sensor in your EMG-
 based Human-Computer Interface (HCI) easily.</p>
-<figure class="align-default">
+<figure class="align-center">
 <img alt="../../../_images/Patchy-All-Colors.jpg" src="../../../_images/Patchy-All-Colors.jpg" />
 </figure>
 </section>
@@ -717,7 +717,7 @@ based Human-Computer Interface (HCI) easily.</p>
 </section>
 <section id="contents-of-the-kit">
 <h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
-<figure class="align-default">
+<figure class="align-center">
 <img alt="../../../_images/kit-contents4.png" src="../../../_images/kit-contents4.png" />
 </figure>
 <p>We have made a complete unboxing video of the kit. Please find the link below:</p>
@@ -727,7 +727,7 @@ based Human-Computer Interface (HCI) easily.</p>
 <section id="software-requirements">
 <h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
 <p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches on your development board and visualise the data on your laptop.</p>
-<figure class="align-default">
+<figure class="align-center">
 <img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
 </figure>
 </section>
@@ -736,7 +736,7 @@ based Human-Computer Interface (HCI) easily.</p>
 <section id="step-1-connect-reference-cable">
 <h3>Step 1: Connect reference cable<a class="headerlink" href="#step-1-connect-reference-cable" title="Link to this heading">#</a></h3>
 <p>Connect the reference cable to the Muscle BioAmp Patchy as shown in the diagram.</p>
-<figure class="align-default">
+<figure class="align-center">
 <img alt="../../../_images/ref-cable-connection.png" src="../../../_images/ref-cable-connection.png" />
 </figure>
 </section>
@@ -755,7 +755,7 @@ based Human-Computer Interface (HCI) easily.</p>
 <section id="step-4-electrode-placements">
 <h3>Step 4: Electrode Placements<a class="headerlink" href="#step-4-electrode-placements" title="Link to this heading">#</a></h3>
 <p>Now peel off the plastic backing from the gel electrodes and place the Muscle BioAmp Patchy on the targeted muscle and the reference on the bony part of your elbow as shown in the diagram.</p>
-<figure class="align-default">
+<figure class="align-center">
 <img alt="../../../_images/patchy-on-hand.png" src="../../../_images/patchy-on-hand.png" />
 </figure>
 <div class="admonition note">
@@ -766,8 +766,11 @@ based Human-Computer Interface (HCI) easily.</p>
 <section id="step-5-connect-arduino-uno-r3">
 <h3>Step 5: Connect Arduino UNO R3<a class="headerlink" href="#step-5-connect-arduino-uno-r3" title="Link to this heading">#</a></h3>
 <p>Connect <code class="docutils literal notranslate"><span class="pre">VCC</span></code> to <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code> to <code class="docutils literal notranslate"><span class="pre">GND</span></code>, and <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to <code class="docutils literal notranslate"><span class="pre">Analog</span> <span class="pre">pin</span> <span class="pre">A0</span></code> of your Arduino UNO via jumper cables provided by us. If you are connecting <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
-<figure class="align-default">
+<figure class="align-center" id="id5">
 <img alt="../../../_images/pathcy-arduino-connections.png" src="../../../_images/pathcy-arduino-connections.png" />
+<figcaption>
+<p><span class="caption-text">Connections with Arduino UNO R3</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -777,9 +780,9 @@ based Human-Computer Interface (HCI) easily.</p>
 <section id="step-6-upload-the-code">
 <h3>Step 6: Upload the code<a class="headerlink" href="#step-6-upload-the-code" title="Link to this heading">#</a></h3>
 <p>Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
-<p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
-<p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
-<figure class="align-default">
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">EMG Filter</a></p>
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">EMG Envelope</a></p>
+<figure class="align-center">
 <img alt="../../../_images/setup.png" src="../../../_images/setup.png" />
 </figure>
 <p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
@@ -796,7 +799,7 @@ the EMG signals.</p>
 <section id="step-7-visualizing-the-emg-signals">
 <h3>Step 7: Visualizing the EMG signals<a class="headerlink" href="#step-7-visualizing-the-emg-signals" title="Link to this heading">#</a></h3>
 <p>Now flex your arm to visualize the muscle signals in real-time on your laptop.</p>
-<figure class="align-default">
+<figure class="align-center">
 <img alt="../../../_images/patchy-emg.png" src="../../../_images/patchy-emg.png" />
 </figure>
 <p><strong>Video tutorial:</strong></p>
@@ -895,6 +898,31 @@ the EMG signals.</p>
   </div>
 </div>
 
+  <div class="sidebar-secondary-item">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        <a role="button" href="../../../muscle-bioamp-patchy.pdf" target="_blank">
+            <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+    
+
+    
+
+    
+
+    
+</div>
+
 </div></div>
               
             
@@ -933,7 +961,7 @@ the EMG signals.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jul 04, 2024.
+  Last updated on Jul 12, 2024.
   <br/>
 </p></div>
       
