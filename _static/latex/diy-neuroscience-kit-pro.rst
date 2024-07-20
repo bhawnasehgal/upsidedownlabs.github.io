@@ -1,7 +1,5 @@
 :orphan:
 
-.. _pro-datasheet:
-
 DIY Neuroscience Kit Pro
 #########################
 

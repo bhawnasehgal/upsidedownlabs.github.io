@@ -1,7 +1,5 @@
 :orphan:
 
-.. _basic-datasheet:
-
 DIY Neuroscience Kit Basic
 ###########################
 
