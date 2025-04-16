@@ -12,6 +12,7 @@ Chords-Web is an open-source web application designed for real-time signal visua
     :align: center
     :alt: Chords-Web Landing Page
 
+
 .. _chords-browsers-compatibility:
 
 Browser Compatibility
@@ -71,8 +72,6 @@ Opening Chords-web
 
 Applications
 ************
-
-.. _chords-visualizer:
 
 Chords Visualizer
 =================
@@ -239,7 +238,6 @@ Running the Application
 9.  Select channels via the ``Channels`` button in the settings popover.  
 10. Adjust zoom using the ``Zoom`` slider for a detailed or overall view.  
 
-.. _fft-visualizer:
 
 FFT Analysis and EEG Band Spectrum Plotting
 ===========================================
@@ -289,7 +287,6 @@ Running the Application
        - **Brighter candle** = Higher beta waves = Strong focus.  
        - **Dim candle** = Lower beta waves = Distraction.  
 
-.. _serial-wizard:
 
 Serial Plotter & Monitor
 ========================
