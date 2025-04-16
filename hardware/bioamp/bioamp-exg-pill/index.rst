@@ -13,10 +13,11 @@ with any microcontroller unit (MCU) or single-board computer (SBC) with an analo
 Arduino UNO & Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, and Raspberry Pi Pico, to name 
 just a few. It also works with any dedicated ADC, like the Texas Instruments ADS1115 and ADS131M0x, among others.
 
-.. note:: It is recommended to use Arduino UNO R4 while recording biopotential signals since it has 14-bit ADC and can record the signals much accurately.
+.. note:: It is recommended to use Arduino UNO R4 while recording biopotential signals since it has 14-bit ADC and can record the signals more accurately.
 
 .. figure:: ../../../media/bioamp-exg-pill.*
     :align: center
+    :alt: BioAmp EXG Pill
 
 What makes it different?
 **************************
@@ -57,16 +58,18 @@ BioAmp EXG Pill’s elegant design allows it to be used in 3 ways:
 2. Castellated holes allow you to solder BioAmp EXG Pill directly onto a custom PCB that requires biopotential-amplification capabilities.
 3. Electrode holes allow you to use any 1.5 mm diameter wire as an electrode cable with minimal strain.
 
-.. figure:: media/Front_Specifications.*
+.. figure:: media/front-specifications.*
     :align: center
+    :alt: BioAmp EXG Pill board - Front specifications
 
-.. figure:: media/Back_Specifications.*
+.. figure:: media/back-bpecifications.*
     :align: center
+    :alt: BioAmp EXG Pill board - Back specifications
 
 BioAmp EXG Pill is fully configurable
-=============================================
+=====================================
 
-1. Increase the gain of the instrumentation amplifier by using a 0603 resistor at ``R6``. Decrease gain and configure the bandpass filter by using 0603 parts at ``R12`` and ``C5``. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording an ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.
+1. BioAmp EXG Pill is optimised to record all your biopotential signals (EMG/ECG/EOG/EEG) accurately thus it is not recommended to change its gain. But in case you want to do so, use a 0603 resistor at ``R6``. Decrease gain and configure the bandpass filter by using 0603 parts at ``R12`` and ``C5``. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording an ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.
 2. The normal method of operation for best-quality signal amplification is to use 3 electrodes by default but you can bridge the pads (below electrodes) to make it configurable for 2 electrodes. The 2-electrode mode is specifically included for projects like heart (ECG) patches for HRV. It’s only supposed to be used with a battery-operated setup and is quite prone to high interference noise due to a lack of proper reference on the body (This option is not recommended for most operations)
 
 Software requirements
@@ -101,21 +104,24 @@ Insert the provided BioAmp cable's JST PH connector and header pins from top as 
 
 .. figure:: media/assembly-step1.*
     :align: center
+    :alt: BioAmp EXG Pill assembly
 
     `Soldering the connector & header pins on BioAmp EXG Pill`
 
 .. figure:: media/bioamp-exg-pill-soldered.*
     :align: center
+    :alt: Assembled BioAmp EXG Pill
 
     `After soldering, BioAmp EXG Pill should look like this`
 
 Step 2 (optional): Configure for ECG/EMG
-==========================================
+========================================
 
 BioAmp EXG Pill is by default configured for recording EEG or EOG but if you want to record good quality ECG or EMG, then it is recommended to configure it by making a solder joint as shown in the image.
 
 .. figure:: media/assembly-step2.*
     :align: center
+    :alt: Configure BioAmp EXG Pill for ECG/EMG
 
 .. note:: Even without making the solder joint the BioAmp EXG Pill is capable of recording ECG or EMG but the signals would be more accurate if you configure it.
 
@@ -138,10 +144,11 @@ Connect your BioAmp EXG Pill to your MCU/ADC as per the connection table shown b
 
 If you are connecting ``OUT`` pin of BioAmp to any other analog pin of your development board, then you will have to change the INPUT PIN in the Arduino sketch accordingly.
 
-.. figure:: media/connections-with-arduino.*
+.. figure:: media/connections-with-board.*
     :align: center
+    :alt: connections with the development board
 
-    `Connections with a development board`
+    `Connections with 3.3/5V development board`
 
 .. warning:: Take precautions while connecting to power, if power pins (VCC/GND) are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).
 
@@ -152,6 +159,7 @@ Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JS
 
 .. figure:: media/connection-with-cable.*
     :align: center
+    :alt: BioAmp EXG Pill connection with BioAmp Cable
 
     `Connections with BioAmp Cable v3`
 
@@ -199,19 +207,19 @@ Step 7: Setting up Chords Web
 
 3. At the bottom, you can see buttons to access various applications:
     a. :ref:`Chords Visualizer <chords-visualizer>`: Use this application for real-time data visualization, recording and data management, filter options, and multi-channel support.
-    b. :ref:`FFT Visualizer <fft-visualizer>`: Use this app to visualize filtered EEG signals in real-time, FFT graph, EEG frequency bands, and a beta candle to determine your focus.
-    c. :ref:`Serial Wizard <serial-wizard>`: This interface provides real-time serial data visualization using serial plotter and monitor, optimised data rendering, baud rate selection and options to toggle between different modes.
+    b. :ref:`FFT Visualizer <chords-web-fft-visualizer>`: Use this app to visualize filtered EEG signals in real-time, FFT graph, EEG frequency bands, and a beta candle to determine your focus.
+    c. :ref:`Serial Wizard <chords-web-serial-wizard>`: This interface provides real-time serial data visualization using serial plotter and monitor, optimised data rendering, baud rate selection and options to toggle between different modes.
 
 4. Click on any of the button according to your requirement, select the COM port and click OK. You will be able to visualize your signals on the screen.
 
 Step 8: Setting up Chords Python
 =================================
 
-Since you have uploaded the firmware already to your board, use our python script and follow the steps given in the :ref:`Chords-Python documentation <using-chords-python>` for lsl streaming, CSV data logging, verbose output with detailed statistics and error reporting. Not only that, you get a complete web interface to access various applications (like ECG with heart rate, EMG with envelope, GUI of channels, CSV plotter, etc.) that you can use to further analyse your signals and create HCI/BCI projects.
+Since you have uploaded the firmware already to your board, use our python script and follow the steps given in the :ref:`Chords-Python documentation <using-chords-python>` for LSL streaming, CSV data logging, verbose output with detailed statistics and error reporting. Not only that, you get a complete web interface to access various applications (like ECG with heart rate, EMG with envelope, GUI of channels, CSV plotter, etc.) that you can use to further analyse your signals and create HCI/BCI projects.
 
 .. figure:: ../../../software/chords/chords-python/media/webinterface.*
     :align: center
-    :alt: Web Interface
+    :alt: Chords-Python Web Interface
 
 Glimpses of previous versions
 *******************************
