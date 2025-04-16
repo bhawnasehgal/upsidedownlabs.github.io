@@ -62,7 +62,7 @@ BioAmp EXG Pill’s elegant design allows it to be used in 3 ways:
     :align: center
     :alt: BioAmp EXG Pill board - Front specifications
 
-.. figure:: media/back-bpecifications.*
+.. figure:: media/back-specifications.*
     :align: center
     :alt: BioAmp EXG Pill board - Back specifications
 
